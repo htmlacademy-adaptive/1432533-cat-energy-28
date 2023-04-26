@@ -1,88 +1,100 @@
-{% set pageId = 0 %}
-{% set permalink = pages[pageId].path %}
-{% extends "./templates/_layout.twig" %}
-
-{% block main %}
+{% set pageId = 0 %} {% set permalink = pages[pageId].path %} {% extends
+"./templates/_layout.twig" %} {% block main %}
 <main class="main-container">
 	<section class="promo">
-	<h1 class="title promo__title">
-		Функциональное питание для котов
-	</h1>
-	<p class="description promo__description">
-		Занялся собой? Займись котом!
-	</p>
-	<img src="img/product_image.jpg" width="280" height="270" alt="Упаковка продукта.">
-	<a class="promo__link button" href="form.html">Подобрать Программу</a>
+		<h1 class="title promo__title">Функциональное питание для котов</h1>
+		<p class="description promo__description">Занялся собой? Займись котом!</p>
+		<img
+			src="img/product_image.jpg"
+			width="280"
+			height="270"
+			alt="Упаковка продукта."
+		/>
+		<a class="promo__link button" href="form.html">Подобрать Программу</a>
 	</section>
 	<section class="service">
 		<h2 class="visually-hidden">Виды Услуг</h2>
 		<h3 class="title service__title">Похудение</h3>
-		<p class="description service__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+		<p class="description service__description">
+			Ваш кот весит больше собаки и почти утратил способность лазить по
+			деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить
+			лишний вес.
+		</p>
 		<a href="#">Каталог Slim</a>
 		<h3 class="title service__title">Набор Массы</h3>
-		<p class="description service__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+		<p class="description service__description">
+			Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
+			Pro поможет вашему коту нарастить необходимые мышцы!
+		</p>
 		<a href="#">Каталог Pro</a>
 	</section>
 	<section class="about-service">
-		<h2 class="title about-service__title">
-			Как это работате
-		</h2>
+		<h2 class="title about-service__title">Как это работате</h2>
 		<ul class="about-service__list">
 			<li class="about-service__item">
-				<span>Функциональное питание содержит только полезные питательные вещества.</span>
+				<span
+					>Функциональное питание содержит только полезные питательные
+					вещества.</span
+				>
 			</li>
 			<li class="about-service__item">
-				<span>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</span>
+				<span
+					>Выпускается в виде порошка, который нужно лишь залить кипятком и
+					готово.</span
+				>
 			</li>
 			<li class="about-service__item">
-				<span>Замените один-два приема обычной еды на наше функциональное питание.</span>
+				<span
+					>Замените один-два приема обычной еды на наше функциональное
+					питание.</span
+				>
 			</li>
 			<li class="about-service__item">
-				<span>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</span>
+				<span
+					>Уже через месяц наслаждайтесь изменениями к лучшему вашего
+					питомца!</span
+				>
 			</li>
 		</ul>
 	</section>
 	<section class="example">
-		<h2 class="title example__title">
-			Живой пример
-		</h2>
+		<h2 class="title example__title">Живой пример</h2>
 		<p class="description example__description">
-			Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+			Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+			Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не
+			менял своих привычек и по-прежнему спит по 16 часов в день.
 		</p>
-		<div class="result-example">
-			<dl class="result-example__list">
-				<div class="result-date">
-						<dt class="result-date__name">
-							снижение веса
-						</dt>
-						<dd class="result-date__value">
-							5 КГ
-						</dd>
-					</div>
-				<div class="result-date">
-						<dt class="result-date__name">
-							затрачено времени
-						</dt>
-						<dd class="result-date__value">
-							60 ДНЕЙ
-						</dd>
-					</div>
-				<div class="result-date">
-						<dt class="result-date__name">
-							затрата на питание:
-						</dt>
-						<dd class="result-date__value">
-							15 000 руб.
-						</dd>
-					</div>
-			</dl>
-				<div class="result-example__slider">
-					<span class="visually-hidden">Фотографии результата</span>
-					<img src="img/result-before.jpg" width="140" height="256" alt="Фотография кота до">
-					<img src="img/result-after.jpg" width="280" height="256" alt="Фотография кота после">
+		<div class="example__result result">
+			<dl class="result__list">
+				<div class="result-item">
+					<dt class="result__name">снижение веса</dt>
+					<dd class="result__value">5 КГ</dd>
 				</div>
+				<div class="result-item">
+					<dt class="result__name">затрачено времени</dt>
+					<dd class="result__value">60 ДНЕЙ</dd>
+				</div>
+				<div class="result-item">
+					<dt class="result__name">затрата на питание:</dt>
+					<dd class="result__value">15 000 руб.</dd>
+				</div>
+			</dl>
+			<div class="result__slider">
+				<span class="visually-hidden">Фотографии результата</span>
+				<img
+					src="img/result-before.jpg"
+					width="140"
+					height="256"
+					alt="Фотография кота до"
+				/>
+				<img
+					src="img/result-after.jpg"
+					width="280"
+					height="256"
+					alt="Фотография кота после"
+				/>
+			</div>
 		</div>
 	</section>
-
 </main>
 {% endblock %}
