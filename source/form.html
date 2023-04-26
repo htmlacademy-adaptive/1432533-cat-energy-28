@@ -3,7 +3,50 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main>
-	Контент страницы формы
+<main class="main-container">
+	<section class="form">
+		<h1 class="title form__title">Подбор программы</h1>
+		<p class="description form__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+		<form action="form.html" method="post">
+			<fieldset class="cat-date">
+				<label for="cat-name">ИМЯ:<em>*</em></label>
+				<input type="text" id="cat-name" required><br>
+				<label for="weight">ВЕС (КГ):<em>*</em></label>
+				<input type="text" id="weight" required><br>
+				<label for="age">ВОЗРАСТ (ЛЕТ):</label>
+				<input type="text" id="age">
+				</fieldset>
+			<fieldset class="cat-service">
+				<input type="radio" id="slimming" value="slimming" name="cat_service">
+				<label for="slimming" class="light">ПОХУДЕНИЕ</label><br>
+				<input type="radio" id="weight-gain" value="weight-gain" name="cat_service">
+				<label for="weight-gain" class="light">НАБОР МАССЫ</label><br>
+				<input type="radio" id="unknown" value="unknown" name="cat_service">
+				<label for="unknown" class="light">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</label>
+			</fieldset>
+			<fieldset class="owner-information">
+				<legend>Контактные данные<br>(владельца кота)</legend>
+				<label for="mail">E-MAIL:<em>*</em></label>
+				<input type="email" id="mail" required><br>
+				<label for="phone">ТЕЛЕФОН:<em>*</em></label>
+				<input type="tel" id="phone" required>
+			</fieldset>
+			<fieldset class="comment">
+				<legend class="form__date comment">Комментарий</legend>
+				<textarea id="comment" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
+			</fieldset>
+			<fieldset class="extra">
+				<legend>Дополнительно</legend>
+				<input type="checkbox" id="sugar" value="extra_sugar" name="user_extra"><label class="light" for="sugar">САХАРОЗАМЕНИТЕЛЬ</label><br>
+				<input type="checkbox" id="water" value="extra_water" name="user_extra"><label class="light" for="water">ПИТЬЕВАЯ ВОДА</label><br>
+				<input type="checkbox" id="milk" value="extra_milk" name="user_extra"><label class="light" for="milk">МОЛОКО</label><br>
+				<input type="checkbox" id="vitamins" value="extra_vitamins" name="user_extra"><label class="light" for="vitamins">ВИТАМИНЫ</label>
+			</fieldset>
+			<button type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+		</form>
+		<small class="legend form__legend">
+			<em>*</em> — Обязательные поля
+		</small>
+	</section>
 </main>
 {% endblock %}
