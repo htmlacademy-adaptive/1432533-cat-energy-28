@@ -4,102 +4,75 @@
 	<section class="form">
 		<h1 class="title form__title">Подбор программы</h1>
 		<p class="description form__description">
-			Заполните анкету, и мы подберем<br />
+			Заполните анкету, и мы подберем<br>
 			программу питания для вашего кота
 		</p>
 		<form action="form.html" method="post">
 			<fieldset class="cat-date">
 				<legend class="visually-hidden">Данные кота</legend>
 				<div class="cat-name">
-				<label for="cat-name">ИМЯ:<span aria-hidden="true">*</span></label>
-				<input type="text" id="cat-name" required />
+					<label for="cat-name">ИМЯ:<span aria-hidden="true">*</span></label>
+					<input type="text" id="cat-name" required>
 				</div>
 				<div class="weight">
-				<label for="weight">ВЕС (КГ):<span aria-hidden="true">*</span></label>
-				<input type="text" id="weight" required />
+					<label for="weight">ВЕС (КГ):<span aria-hidden="true">*</span></label>
+					<input type="text" id="weight" required>
 				</div>
 				<div class="age">
-				<label for="age">ВОЗРАСТ (ЛЕТ):</label>
-				<input type="text" id="age" />
+					<label for="age">ВОЗРАСТ (ЛЕТ):</label>
+					<input type="text" id="age">
 				</div>
 			</fieldset>
 			<fieldset class="cat-service">
 				<legend class="visually-hidden">Выбор программы питания</legend>
 				<div class="slimming">
-				<input type="radio" id="slimming" value="slimming" name="cat_service" />
-				<label for="slimming" class="light">ПОХУДЕНИЕ</label>
+					<input type="radio" id="slimming" value="slimming" name="cat_service">
+					<label for="slimming" class="light">ПОХУДЕНИЕ</label>
 				</div>
 				<div class="weight-gain">
-				<input
-					type="radio"
-					id="weight-gain"
-					value="weight-gain"
-					name="cat_service"
-				/>
-				<label for="weight-gain" class="light">НАБОР МАССЫ</label>
+					<input type="radio" id="weight-gain" value="weight-gain" name="cat_service">
+					<label for="weight-gain" class="light">НАБОР МАССЫ</label>
 				</div>
 				<div class="unknow">
-				<input type="radio" id="unknown" value="unknown" name="cat_service" />
-				<label for="unknown" class="light">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</label>
+					<input type="radio" id="unknown" value="unknown" name="cat_service">
+					<label for="unknown" class="light">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</label>
 				</div>
 			</fieldset>
 			<fieldset class="owner-information">
-				<legend>Контактные данные<br />(владельца кота)</legend>
+				<legend>Контактные данные<br>(владельца кота)</legend>
 				<div class="email">
-				<label for="mail">E-MAIL:<span aria-hidden="true">*</span></label>
-				<input type="email" id="mail" required />
+					<label for="mail">E-MAIL:<span aria-hidden="true">*</span></label>
+					<input type="email" id="mail" required>
 				</div>
 				<div class="phone">
-				<label for="phone">ТЕЛЕФОН:<span aria-hidden="true">*</span></label>
-				<input type="tel" id="phone" required />
+					<label for="phone">ТЕЛЕФОН:<span aria-hidden="true">*</span></label>
+					<input type="tel" id="phone" required>
 				</div>
 			</fieldset>
 			<div class="comment">
-				<h2 class="title comment__title">Комментарий</h2>
-				<label class="visually-hidden" for="comment">Комментарий</label>
-				<textarea
-					id="comment"
-					placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"
-				></textarea>
+				<label class="title comment__title" for="comment">Комментарий</label>
+				<textarea id="comment" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
 			</div>
 			<fieldset class="extra">
 				<legend>Дополнительно</legend>
 				<div class="sugar">
-				<input
-					type="checkbox"
-					id="sugar"
-					value="extra_sugar"
-					name="user_extra"
-				/><label class="light" for="sugar">САХАРОЗАМЕНИТЕЛЬ</label>
+					<input type="checkbox" id="sugar" value="extra_sugar" name="user_extra"><label class="light" for="sugar">САХАРОЗАМЕНИТЕЛЬ</label>
 				</div>
 				<div class="water">
-				<input
-					type="checkbox"
-					id="water"
-					value="extra_water"
-					name="user_extra"
-				/><label class="light" for="water">ПИТЬЕВАЯ ВОДА</label>
+					<input type="checkbox" id="water" value="extra_water" name="user_extra"><label class="light" for="water">ПИТЬЕВАЯ ВОДА</label>
 				</div>
 				<div class="milk">
-				<input
-					type="checkbox"
-					id="milk"
-					value="extra_milk"
-					name="user_extra"
-				/><label class="light" for="milk">МОЛОКО</label>
+					<input type="checkbox" id="milk" value="extra_milk" name="user_extra"><label class="light" for="milk">МОЛОКО</label>
 				</div>
 				<div class="vitamins">
-				<input
-					type="checkbox"
-					id="vitamins"
-					value="extra_vitamins"
-					name="user_extra"
-				/><label class="light" for="vitamins">ВИТАМИНЫ</label>
+					<input type="checkbox" id="vitamins" value="extra_vitamins" name="user_extra"><label class="light" for="vitamins">ВИТАМИНЫ</label>
 				</div>
 			</fieldset>
 			<button type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
 		</form>
-		<small class="legend form__legend"> <span aria-hidden="true">* — Обязательные поля</span> </small>
+		<small class="legend form__legend">
+			<span aria-hidden="true">* — Обязательные поля</span>
+		</small>
 	</section>
 </main>
 {% endblock %}
