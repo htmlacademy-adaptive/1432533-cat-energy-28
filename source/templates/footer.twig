@@ -5,8 +5,15 @@
 			<p class="adress__text">ул. Большая <br>Конюшенная, д. 19/8<br> Санкт-Петербург</p>
 		</div>
 		<div class="main-footer__map">
-			<img src="img/map.jpg" width="320" height="362" alt="Карта.">
-			<img src="img/map-pin.jpg" width="57" height="53" alt="Метка на карте.">
+			<picture>
+				<source media="(min-width: 1200px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x" width="1440" height="400">
+				<source media="(min-width: 768px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x" width="768" height="400">
+				<img src="img/map-phone@1x.png" srcset="img/map-phone@2x.png 2x" width="320" height="362" alt="Карта.">
+			</picture>
+			<picture>
+				<source media="(min-width: 768px)" srcset="img/pin-tablet@1x.png 1x, img/pin-tablet@2x.png 2x" width="113" height="106">
+				<img src="img/pin-phone@1x.png" srcset="img/pin-phone@2x.png 2x" width="57" height="53" alt="Метка на карте.">
+			</picture>
 		</div>
 		<div class="main-footer__logo">
 			<a class="main-footer_logo ">

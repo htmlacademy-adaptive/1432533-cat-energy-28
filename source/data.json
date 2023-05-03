@@ -20,24 +20,85 @@
 		"mobile": null
 	},
 	"images": {
-		"map": {
+		"map-desktop": {
 			"ext": "png",
 			"maxdppx": 2,
 			"sizes": [
 				{
 					"viewport": "desktop",
-					"width": 1220,
+					"width": 1440,
 					"height": 400
-				},
+				}
+			]
+		},
+		"map-tablet": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
 				{
 					"viewport": "tablet",
 					"width": 768,
 					"height": 400
-				},
+				}
+			]
+		},
+		"map-phone": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
 				{
 					"viewport": "mobile",
 					"width": 320,
 					"height": 362
+				}
+			]
+		},
+		"pin-tablet": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 113,
+					"height": 106
+				},
+				{
+					"viewport": "tablet",
+					"width": 113,
+					"height": 106
+				}
+			]
+		},
+		"pin-phone": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "mobile",
+					"width": 57,
+					"height": 53
+				}
+			]
+		},
+		"pin-phone": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "mobile",
+					"width": 57,
+					"height": 53
+				}
+			]
+		},
+		"product-image-desktop": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 552,
+					"height": 449
 				}
 			]
 		},
