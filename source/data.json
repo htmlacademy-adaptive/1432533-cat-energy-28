@@ -115,11 +115,6 @@
 			"maxdppx": 2,
 			"sizes": [
 				{
-					"viewport": "desktop",
-					"width": 161,
-					"height": 172
-				},
-				{
 					"viewport": "tablet",
 					"width": 161,
 					"height": 172
@@ -156,11 +151,6 @@
 			"ext": "png",
 			"maxdppx": 2,
 			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 163,
-					"height": 174
-				},
 				{
 					"viewport": "tablet",
 					"width": 163,
@@ -199,11 +189,6 @@
 			"maxdppx": 2,
 			"sizes": [
 				{
-					"viewport": "desktop",
-					"width": 161,
-					"height": 171
-				},
-				{
 					"viewport": "tablet",
 					"width": 161,
 					"height": 171
@@ -241,11 +226,6 @@
 			"maxdppx": 2,
 			"sizes": [
 				{
-					"viewport": "desktop",
-					"width": 163,
-					"height": 174
-				},
-				{
 					"viewport": "tablet",
 					"width": 163,
 					"height": 174
@@ -254,6 +234,43 @@
 					"viewport": "mobile",
 					"width": 72,
 					"height": 84
+				}
+			]
+		},
+		"promo-cat": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktope",
+					"width": 1044,
+					"height": 696
+				},
+				{
+					"viewport": "mobile",
+					"width": 320,
+					"height": 302
+				}
+			]
+		},
+		"gift": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 246,
+					"height": 289
+				},
+				{
+					"viewport": "tablet",
+					"width": 707,
+					"height": 200
+				},
+				{
+					"viewport": "mobile",
+					"width": 279,
+					"height": 289
 				}
 			]
 		},
