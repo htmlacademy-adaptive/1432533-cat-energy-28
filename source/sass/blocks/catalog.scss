@@ -1,0 +1,31 @@
+.catalog__product-card {
+	display: flex;
+	flex-direction: column;
+}
+
+.product-card-item {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+		"card-image card-title"
+		"card-image card"
+		"card-button card-button";
+	gap: 13px;
+	margin-bottom: 33px;
+}
+
+.product-card__title {
+	grid-area: card-title;
+}
+
+.product-card__image {
+	grid-area: card-image;
+}
+
+.product-card__card {
+	grid-area: card;
+}
+
+.product-card__link {
+	grid-area: card-button;
+}
