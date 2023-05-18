@@ -58,3 +58,43 @@
 .product-card__link {
 	grid-area: card-button;
 }
+
+.additional-section {
+	@media #{$desktop-only} {
+		display: grid;
+		grid-template-columns: 896px auto;
+		gap: 79px;
+	}
+}
+
+.additional-item {
+	@media #{$tablet-only} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"additional-title additional-products"
+			"additional-link additional-link";
+	}
+
+	@media #{$desktop-only} {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas:
+			"additional-title additional-products additional-link"
+			"additional-title additional-products additional-link"
+			"additional-title additional-products additional-link"
+			"additional-title additional-products additional-link";
+	}
+}
+
+.additional-item__title {
+	grid-area: additional-title;
+}
+
+.additional-products {
+	grid-area: additional-products;
+}
+
+.additional__link {
+	grid-area: additional-link;
+}
