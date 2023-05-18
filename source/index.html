@@ -57,25 +57,26 @@
 		</p>
 		<div class="example__result result">
 			<dl class="result__list">
-				<div class="result-item">
+				<div class="result-item-weight">
 					<dt class="result__name">снижение веса</dt>
 					<dd class="result__value">5 КГ</dd>
 				</div>
-				<div class="result-item">
+				<div class="result-item-time">
 					<dt class="result__name">затрачено времени</dt>
 					<dd class="result__value">60 ДНЕЙ</dd>
 				</div>
-				<div class="result-item">
+				<div class="result-item-price">
 					<dt class="result__name">затрата на питание:</dt>
 					<dd class="result__value">15 000 руб.</dd>
 				</div>
 			</dl>
-			<div class="result__slider">
-				<span class="visually-hidden">Фотографии результата</span>
-				{% include "templates/picture.twig" with {name: "result-before", class: "", alt: "Фотография кота до прохождения программ."} %}
-				{% include "templates/picture.twig" with {name: "result-after", class: "", alt: "Фотография кота после прохождения программы."} %}
-			</div>
 		</div>
+		<div class="example__slider slider">
+			<span class="visually-hidden">Фотографии результата</span>
+			{% include "templates/picture.twig" with {name: "result-before", class: "result-image-before", alt: "Фотография кота до прохождения программ."} %}
+			{% include "templates/picture.twig" with {name: "result-after", class: "result-image-after", alt: "Фотография кота после прохождения программы."} %}
+		</div>
+
 	</section>
 </main>
 {% endblock %}

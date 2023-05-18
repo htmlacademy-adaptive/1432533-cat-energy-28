@@ -1,9 +1,31 @@
 .service {
 	display: flex;
 	flex-direction: column;
+
+	@media #{$desktop-only} {
+		flex-direction: row;
+	}
 }
 
 .service__type-service {
 	display: flex;
 	flex-direction: column;
+}
+
+.about-service__list {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+
+	@media #{$tablet-only} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 153px;
+		row-gap: 37px;
+	}
+
+	@media #{$desktop-only} {
+		display: flex;
+		flex-direction: row;
+	}
 }

@@ -62,7 +62,7 @@
 .additional-section {
 	@media #{$desktop-only} {
 		display: grid;
-		grid-template-columns: 896px auto;
+		grid-template-columns: 2fr 1fr;
 		gap: 79px;
 	}
 }

@@ -1,5 +1,6 @@
 <header class="main-header">
-	<a class="main-header_logo">
+	<div class="main-header__wrapper">
+	<a class="main-header__logo">
 		<picture>
 			<source media="(min-width: 1200px)" srcset="img/logo.svg#desktop" width="70" height="66">
 			<source media="(min-width: 768px)" srcset="img/logo.svg#tablet" width="61" height="50">
@@ -7,10 +8,10 @@
 		</picture>
 		<img src="img/logo.svg#logotype" width="128" height="24" alt="Cat Energy.">
 	</a>
+	<button class="button button__toggle" type="button"></button>
+	<span class="visually-hidden">Открыть меню</span>
+	</div>
 	<nav class="main-nav">
-		<button class="main-nav__toggle" type="button">
-			<span class="visually-hidden">Открыть меню</span>
-		</button>
 		<ul class="main-nav__list">
 			<li class="main-nav__item">
 				<a href="index.html">Главная</a>
