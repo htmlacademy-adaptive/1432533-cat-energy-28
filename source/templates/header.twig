@@ -1,6 +1,6 @@
 <header class="main-header">
 	<div class="main-header__wrapper">
-	<a class="main-header__logo">
+	<a class="main-header__logo" href="./" {% if permalink == "./" %}aria-current="page"{% endif %}>
 		<picture>
 			<source media="(min-width: 1200px)" srcset="img/logo.svg#desktop" width="70" height="66">
 			<source media="(min-width: 768px)" srcset="img/logo.svg#tablet" width="61" height="50">
@@ -8,19 +8,17 @@
 		</picture>
 		<img src="img/logo.svg#logotype" width="128" height="24" alt="Cat Energy.">
 	</a>
-	<button class="button button__toggle" type="button">Открыть меню</button>
+	<button class="button button__toggle" type="button">
+		<span class="visually-hidden">Открыть меню</span>
+	</button>
 	</div>
 	<nav class="main-nav">
 		<ul class="main-nav__list">
-			<li class="main-nav__item">
-				<a href="index.html">Главная</a>
+			{% for page in pages %}
+			<li class="main-nav__item" {% if permalink == page.path %}aria-current="page"{% endif %}>
+				<a href="{{ page.path}}">{{ page.name }}</a>
 			</li>
-			<li class="main-nav__item">
-				<a href="catalog.html">Каталог Продукции</a>
-			</li>
-			<li class="main-nav__item">
-				<a href="form.html">Подбор Программы</a>
-			</li>
+			{% endfor %}
 		</ul>
 	</nav>
 </header>
