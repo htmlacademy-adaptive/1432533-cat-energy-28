@@ -7,6 +7,7 @@
 			Заполните анкету, и мы подберем<br> программу питания для вашего кота
 		</p>
 		<form action="form.html" method="post">
+			<div class="form__date date">
 			<fieldset class="cat-date">
 				<legend class="visually-hidden">Данные кота</legend>
 				<div class="cat-name">
@@ -37,6 +38,7 @@
 					<label for="unknown" class="light">Не знаю (нужен ваш совет)</label>
 				</div>
 			</fieldset>
+			</div>
 			<fieldset class="owner-information">
 				<legend>Контактные данные<br>(владельца кота)</legend>
 				<div class="email">
@@ -67,11 +69,13 @@
 					<input type="checkbox" id="vitamins" value="extra_vitamins" name="user_extra"><label class="light" for="vitamins">Витамины</label>
 				</div>
 			</fieldset>
-			<button class="button form__button" type="submit">Отправить заявку</button>
 		</form>
+		<div class="form__wrapper">
+		<button class="button form__button" type="submit">Отправить заявку</button>
 		<small class="legend form__legend">
 			<span aria-hidden="true">* — Обязательные поля</span>
 		</small>
+		</div>
 	</section>
 </main>
 {% endblock %}
