@@ -1,6 +1,12 @@
 .main-header {
 	display: flex;
 	flex-direction: column;
+
+	@media #{$not-mobile} {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 
 .main-header__wrapper {
@@ -9,4 +15,23 @@
 	min-width: 280px;
 	margin: 0 20px;
 	justify-content: space-between;
+}
+
+.main-nav__list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+
+	@media #{$not-mobile} {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+.button__toggle {
+	@media #{$not-mobile} {
+		display: none;
+	}
 }

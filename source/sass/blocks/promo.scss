@@ -1,0 +1,30 @@
+.promo {
+	display: flex;
+	flex-direction: column;
+
+	@media #{$desktop-only} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"promo-title promo-image"
+			"promo-description promo-image"
+			"promo-link promo-image";
+	}
+}
+
+.promo__title {
+	grid-area: promo-title;
+}
+
+.promo__description {
+	grid-area: promo-description;
+}
+
+.promo__image {
+	grid-area: promo-image;
+	object-fit: contain;
+}
+
+.promo__link {
+	grid-area: promo-link;
+}
