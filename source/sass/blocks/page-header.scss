@@ -14,15 +14,6 @@
 		margin-right: 20px;
 	}
 
-	@media #{$mobile-only} {
-		font-family: "Oswald", sans-serif;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 20px;
-		line-height: 20px;
-		text-transform: uppercase;
-	}
-
 	@media #{$tablet-only} {
 		font-family: "Oswald", sans-serif;
 		font-style: normal;
@@ -155,11 +146,28 @@
 
 	@media #{$not-mobile} {
 		border: none;
+		font-family: "Oswald", sans-serif;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 20px;
+		text-transform: uppercase;
 	}
 
 	@media #{$tablet-only} {
+		font-family: "Oswald", sans-serif;
+		font-style: normal;
+		font-weight: 400;
 		font-size: 18px;
 		line-height: 24px;
+		text-transform: uppercase;
+		color: #000000;
+	}
+
+	@media #{$desktop-only} {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 30px;
 	}
 }
 
