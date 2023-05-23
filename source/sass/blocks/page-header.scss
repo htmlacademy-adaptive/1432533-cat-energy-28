@@ -13,21 +13,11 @@
 		margin-left: 20px;
 		margin-right: 20px;
 	}
-
-	@media #{$tablet-only} {
-		font-family: "Oswald", sans-serif;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 24px;
-		text-transform: uppercase;
-		color: #000000;
-	}
 }
 
 .main-header__logo {
 	display: block;
-	height: 66px;
+	height: 57px;
 	margin-left: 20px;
 	margin-right: 20px;
 
@@ -54,6 +44,7 @@
 	padding: 0;
 	list-style: none;
 
+
 	@media #{$not-mobile} {
 		display: flex;
 		flex-direction: row;
@@ -61,11 +52,37 @@
 	}
 }
 
-
-.main-nav__item {
-	@media #{$tablet-only} {
+.site-list__item {
+	@media #{$not-mobile} {
 		&:hover {
 			opacity: 0.6;
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				right: 22px;
+				bottom: 10px;
+				left: 22px;
+				height: 3px;
+				background: #826550;
+			}
+		}
+	}
+}
+
+.site-list__item[aria-current="page"] {
+	&:active {
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			right: 22px;
+			bottom: 10px;
+			left: 22px;
+			height: 3px;
+			background: #68b738;
 		}
 	}
 }
@@ -77,9 +94,10 @@
 	z-index: 2;
 	display: block;
 	width: 64px;
-	height: 65px;
+	height: 57px;
 	cursor: pointer;
 	border: none;
+	padding: 7px;
 	background-color: #ffffff;
 
 	@media #{$not-mobile} {
@@ -99,7 +117,7 @@
 	top: 24px;
 	left: 20px;
 	width: 24px;
-	height: 2px;
+	height: 1.5px;
 	background-color: #000000;
 	box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
 }
@@ -135,10 +153,13 @@
 	text-align: center;
 	padding: 22px;
 	padding-bottom: 24px;
+	font-family: "Oswald", sans-serif;
+	font-style: normal;
+	font-weight: 500;
 	font-size: 20px;
-	line-height: 20px;
-	color: #000000;
+	line-height: 1;
 	text-transform: uppercase;
+	color: #000000;
 	text-decoration: none;
 	background-color: #ffffff;
 	border-top: 1px solid #e6e6e6;

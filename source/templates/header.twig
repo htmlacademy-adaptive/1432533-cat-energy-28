@@ -1,5 +1,4 @@
 <header class="main-header">
-
 	<a class="main-header__logo" href="./" {% if permalink=="./" %}aria-current="page" {% endif %}>
 		<picture>
 			<source media="(min-width: 1200px)" srcset="img/logo.svg#desktop" width="70" height="66">
@@ -16,8 +15,8 @@
 			</button>
 			<ul class="main-nav__list site-list">
 				{% for page in pages %}
-				<li class="main-nav__item" {% if permalink==page.path %}aria-current="page" {% endif %}>
-					<a href="{{ page.path}}">{{ page.name }}</a>
+				<li class="main-nav__item" >
+					<a class="site-list__item" href="{{ page.path}}" {% if permalink==page.path %}aria-current="page" {% endif %}>{{ page.name }}</a>
 				</li>
 				{% endfor %}
 			</ul>
