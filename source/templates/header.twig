@@ -1,25 +1,25 @@
-<header class="main-header">
-	<a class="main-header__logo" href="./" {% if permalink=="./" %}aria-current="page" {% endif %}>
-		<picture>
-			<source media="(min-width: 1200px)" srcset="img/logo.svg#desktop" width="70" height="66">
-			<source media="(min-width: 768px)" srcset="img/logo.svg#tablet" width="61" height="50">
-			<img src="img/logo.svg#mobile" width="34" height="38" alt="Cat Energy.">
-		</picture>
-		<img src="img/logo.svg#logotype" width="128" height="24" alt="Cat Energy.">
-	</a>
-	</div>
-	<nav class="main-nav main-nav--closed main-nav--nojs">
-		<div class="main-nav__wrapper">
-			<button class="main-nav__toggle" type="button">
-				<span class="visually-hidden">Открыть меню</span>
-			</button>
-			<ul class="main-nav__list site-list">
-				{% for page in pages %}
-				<li class="main-nav__item" >
-					<a class="site-list__item" href="{{ page.path}}" {% if permalink==page.path %}aria-current="page" {% endif %}>{{ page.name }}</a>
-				</li>
-				{% endfor %}
-			</ul>
-		</div>
-	</nav>
+<header class="main-header page__centerer">
+  <a class="main-header__logo" href="./" {% if permalink == "./" %}aria-current="page"{% endif %}>
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/logo.svg#desktop" width="70" height="66">
+      <source media="(min-width: 768px)" srcset="img/logo.svg#tablet" width="61" height="50">
+      <img src="img/logo.svg#mobile" width="34" height="38" alt="Cat Energy.">
+    </picture>
+    <img src="img/logo.svg#logotype" width="128" height="24" alt="Cat Energy.">
+  </a>
+  </div>
+  <nav class="main-nav main-nav--opened main-nav--nojs {% if permalink == "./" %}main-nav--text_light{% endif %}">
+    <div class="main-nav__wrapper">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list">
+        {% for page in pages %}
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="{{ page.path }}" {% if permalink == page.path %}aria-current="page" {% endif %}>{{ page.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
 </header>

@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__date {
+  @media #{$desktop-only} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$not-mobile} {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

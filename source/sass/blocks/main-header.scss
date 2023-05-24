@@ -1,0 +1,26 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+
+  background-color: #ffffff;
+
+  @media #{$not-mobile} {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: transparent;
+  }
+}
+
+.main-header__logo {
+  display: block;
+  height: 57px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media #{$tablet-only} {
+    width: 174px;
+  }
+}

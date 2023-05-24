@@ -1,83 +1,25 @@
 .example {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	@media #{$desktop-only} {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas:
-			"example-title before-after"
-			"example-description before-after"
-			"result-list before-after";
-	}
-}
-
-.result__list {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-areas:
-		"weight time"
-		"price price";
-
-	row-gap: 20px;
-
-	@media #{$tablet-only} {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-}
-
-.result-item-weight {
-	grid-area: weight;
-	display: flex;
-	flex-direction: column-reverse;
-}
-
-.result-item-time {
-	grid-area: time;
-	display: flex;
-	flex-direction: column-reverse;
-}
-
-.result-item-price {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	grid-area: price;
-
-	@media #{$tablet-only} {
-		flex-direction: column;
-	}
-
-	@media #{$desktop-only} {
-		justify-content: space-around;
-	}
+  @media #{$desktop-only} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "example-title before-after"
+      "example-description before-after"
+      "result-list before-after";
+  }
 }
 
 .example__slider {
-	grid-area: before-after;
-}
-
-.result-item {
-	display: flex;
-	flex-direction: column;
-}
-
-
-.result__value {
-	margin: 0;
-	align-items: center;
+  grid-area: before-after;
 }
 
 .example__title {
-	grid-area: example-title;
+  grid-area: example-title;
 }
 
 .example__description {
-	grid-area: example-description;
-}
-
-.result__wrapper {
-	grid-area: result-list;
+  grid-area: example-description;
 }

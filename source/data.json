@@ -1,300 +1,300 @@
 {
-	"SERVER_ROOT": "./build/",
-	"projectName": "Cat Energy",
-	"pages": [
-		{
-			"path": "./",
-			"name": "Главная"
-		},
-		{
-			"path": "catalog.html",
-			"name": "Каталог продукции"
-		},
-		{
-			"path": "form.html",
-			"name": "Подбор программы"
-		}
-	],
-	"viewports": {
-		"desktop": 1280,
-		"tablet": 768,
-		"mobile": null
-	},
-	"images": {
-		"map": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 1440,
-					"height": 400
-				},
-				{
-					"viewport": "tablet",
-					"width": 768,
-					"height": 400
-				},
-				{
-					"viewport": "mobile",
-					"width": 320,
-					"height": 362
-				}
-			]
-		},
-		"pin": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "tablet",
-					"width": 113,
-					"height": 106
-				},
-				{
-					"viewport": "mobile",
-					"width": 57,
-					"height": 53
-				}
-			]
-		},
-		"product-image": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 552,
-					"height": 499
-				},
-				{
-					"viewport": "tablet",
-					"width": 709,
-					"height": 609
-				},
-				{
-					"viewport": "mobile",
-					"width": 280,
-					"height": 270
-				}
-			]
-		},
-		"result-before": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "tablet",
-					"width": 560,
-					"height": 512
-				},
-				{
-					"viewport": "mobile",
-					"width": 280,
-					"height": 256
-				}
-			]
-		},
-		"result-after": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "tablet",
-					"width": 560,
-					"height": 512
-				},
-				{
-					"viewport": "mobile",
-					"width": 280,
-					"height": 256
-				}
-			]
-		},
-		"catalog/chicken-500": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "tablet",
-					"width": 161,
-					"height": 172
-				},
-				{
-					"viewport": "mobile",
-					"width": 68,
-					"height": 86
-				}
-			]
-		},
-		"catalog/chicken-1000": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 172,
-					"height": 196
-				},
-				{
-					"viewport": "tablet",
-					"width": 168,
-					"height": 206
-				},
-				{
-					"viewport": "mobile",
-					"width": 84,
-					"height": 100
-				}
-			]
-		},
-		"catalog/fish-500": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "tablet",
-					"width": 163,
-					"height": 174
-				},
-				{
-					"viewport": "mobile",
-					"width": 68,
-					"height": 78
-				}
-			]
-		},
-		"catalog/fish-1000": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 172,
-					"height": 196
-				},
-				{
-					"viewport": "tablet",
-					"width": 168,
-					"height": 200
-				},
-				{
-					"viewport": "mobile",
-					"width": 84,
-					"height": 100
-				}
-			]
-		},
-		"catalog/buckwheat-500": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "tablet",
-					"width": 161,
-					"height": 171
-				},
-				{
-					"viewport": "mobile",
-					"width": 68,
-					"height": 78
-				}
-			]
-		},
-		"catalog/buckwheat-1000": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 172,
-					"height": 196
-				},
-				{
-					"viewport": "tablet",
-					"width": 168,
-					"height": 200
-				},
-				{
-					"viewport": "mobile",
-					"width": 84,
-					"height": 100
-				}
-			]
-		},
-		"catalog/rice-500": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "tablet",
-					"width": 163,
-					"height": 174
-				},
-				{
-					"viewport": "mobile",
-					"width": 72,
-					"height": 84
-				}
-			]
-		},
-		"promo-cat": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 1044,
-					"height": 696
-				},
-				{
-					"viewport": "mobile",
-					"width": 320,
-					"height": 302
-				}
-			]
-		},
-		"gift": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 246,
-					"height": 289
-				},
-				{
-					"viewport": "tablet",
-					"width": 707,
-					"height": 200
-				},
-				{
-					"viewport": "mobile",
-					"width": 279,
-					"height": 289
-				}
-			]
-		},
-		"test": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 1280,
-					"height": 1280
-				},
-				{
-					"viewport": "tablet",
-					"width": 640,
-					"height": 640
-				},
-				{
-					"viewport": "mobile",
-					"width": 320,
-					"height": 320
-				}
-			]
-		}
-	}
+  "SERVER_ROOT": "./build/",
+  "projectName": "Cat Energy",
+  "pages": [
+    {
+      "path": "./",
+      "name": "Главная"
+    },
+    {
+      "path": "catalog.html",
+      "name": "Каталог продукции"
+    },
+    {
+      "path": "form.html",
+      "name": "Подбор программы"
+    }
+  ],
+  "viewports": {
+    "desktop": 1280,
+    "tablet": 768,
+    "mobile": null
+  },
+  "images": {
+    "map": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "desktop",
+          "width": 1440,
+          "height": 400
+        },
+        {
+          "viewport": "tablet",
+          "width": 768,
+          "height": 400
+        },
+        {
+          "viewport": "mobile",
+          "width": 320,
+          "height": 362
+        }
+      ]
+    },
+    "pin": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "tablet",
+          "width": 113,
+          "height": 106
+        },
+        {
+          "viewport": "mobile",
+          "width": 57,
+          "height": 53
+        }
+      ]
+    },
+    "product-image": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "desktop",
+          "width": 552,
+          "height": 499
+        },
+        {
+          "viewport": "tablet",
+          "width": 709,
+          "height": 609
+        },
+        {
+          "viewport": "mobile",
+          "width": 280,
+          "height": 270
+        }
+      ]
+    },
+    "result-before": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "tablet",
+          "width": 560,
+          "height": 512
+        },
+        {
+          "viewport": "mobile",
+          "width": 280,
+          "height": 256
+        }
+      ]
+    },
+    "result-after": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "tablet",
+          "width": 560,
+          "height": 512
+        },
+        {
+          "viewport": "mobile",
+          "width": 280,
+          "height": 256
+        }
+      ]
+    },
+    "catalog/chicken-500": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "tablet",
+          "width": 161,
+          "height": 172
+        },
+        {
+          "viewport": "mobile",
+          "width": 68,
+          "height": 86
+        }
+      ]
+    },
+    "catalog/chicken-1000": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "desktop",
+          "width": 172,
+          "height": 196
+        },
+        {
+          "viewport": "tablet",
+          "width": 168,
+          "height": 206
+        },
+        {
+          "viewport": "mobile",
+          "width": 84,
+          "height": 100
+        }
+      ]
+    },
+    "catalog/fish-500": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "tablet",
+          "width": 163,
+          "height": 174
+        },
+        {
+          "viewport": "mobile",
+          "width": 68,
+          "height": 78
+        }
+      ]
+    },
+    "catalog/fish-1000": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "desktop",
+          "width": 172,
+          "height": 196
+        },
+        {
+          "viewport": "tablet",
+          "width": 168,
+          "height": 200
+        },
+        {
+          "viewport": "mobile",
+          "width": 84,
+          "height": 100
+        }
+      ]
+    },
+    "catalog/buckwheat-500": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "tablet",
+          "width": 161,
+          "height": 171
+        },
+        {
+          "viewport": "mobile",
+          "width": 68,
+          "height": 78
+        }
+      ]
+    },
+    "catalog/buckwheat-1000": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "desktop",
+          "width": 172,
+          "height": 196
+        },
+        {
+          "viewport": "tablet",
+          "width": 168,
+          "height": 200
+        },
+        {
+          "viewport": "mobile",
+          "width": 84,
+          "height": 100
+        }
+      ]
+    },
+    "catalog/rice-500": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "tablet",
+          "width": 163,
+          "height": 174
+        },
+        {
+          "viewport": "mobile",
+          "width": 72,
+          "height": 84
+        }
+      ]
+    },
+    "promo-cat": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "desktop",
+          "width": 1044,
+          "height": 696
+        },
+        {
+          "viewport": "mobile",
+          "width": 320,
+          "height": 302
+        }
+      ]
+    },
+    "gift": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "desktop",
+          "width": 246,
+          "height": 289
+        },
+        {
+          "viewport": "tablet",
+          "width": 707,
+          "height": 200
+        },
+        {
+          "viewport": "mobile",
+          "width": 279,
+          "height": 289
+        }
+      ]
+    },
+    "test": {
+      "ext": "png",
+      "maxdppx": 2,
+      "sizes": [
+        {
+          "viewport": "desktop",
+          "width": 1280,
+          "height": 1280
+        },
+        {
+          "viewport": "tablet",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "viewport": "mobile",
+          "width": 320,
+          "height": 320
+        }
+      ]
+    }
+  }
 }

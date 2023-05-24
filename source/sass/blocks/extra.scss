@@ -1,0 +1,9 @@
+.extra {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$tablet-only} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

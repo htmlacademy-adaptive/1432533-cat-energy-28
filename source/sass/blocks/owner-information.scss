@@ -1,0 +1,9 @@
+.owner-information {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$desktop-only} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
