@@ -1,3 +1,16 @@
+.about-service {
+  margin-bottom: 49px;
+
+  @media #{$tablet-only} {
+    margin-bottom: 0;
+  }
+
+  @media #{$desktop-only} {
+    margin-bottom: 0;
+  }
+}
+
+
 .about-service__title {
   font-family: var(--accent-font);
   font-style: normal;
@@ -6,10 +19,13 @@
   line-height: 1.11;
   text-align: left;
   color: #000000;
-  margin-bottom: 32px;
+  margin: 0;
+  margin-bottom: 40px;
 
-  @media #{$mobile-only} {
-    margin-bottom: 40px;
+  @media #{$not-mobile} {
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 72px;
   }
 }
 
@@ -17,8 +33,8 @@
   display: flex;
   flex-direction: column;
   list-style: none;
+  margin: 0;
   padding: 0;
-  border-bottom: 1px solid #e6e6e6;
 
   @media #{$mobile-only} {
     gap: 20px;
@@ -28,6 +44,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 37px;
+    column-gap: 0;
   }
 
   @media #{$desktop-only} {
@@ -46,6 +63,7 @@
   font-size: 14px;
   line-height: 1.29;
   color: var(--main-color);
+  position: relative;
 
   @media #{$not-mobile} {
     height: 280px;
@@ -86,8 +104,6 @@
   }
 
   @media #{$not-mobile} {
-    margin-top: 40px;
-
     &::before {
       width: 80px;
       height: 80px;
@@ -96,32 +112,83 @@
 }
 
 .about-service__item:nth-child(1) {
-  @media #{$not-mobile} {
-    width: 230px;
+  @media #{$tablet-only} {
+    margin-right: 153px;
+  }
+
+  @media #{$desktop-only} {
+    min-width: 230px;
     min-height: 280px;
     margin-right: 94px;
   }
 }
 
 .about-service__item:nth-child(2) {
-  @media #{$not-mobile} {
-    width: 246px;
+  @media #{$tablet-only} {
+    margin-right: 79px;
+  }
+
+  @media #{$desktop-only} {
+    min-width: 246px;
     min-height: 280px;
     margin-right: 79px;
   }
 }
 
 .about-service__item:nth-child(3) {
-  @media #{$not-mobile} {
-    width: 247px;
+  @media #{$tablet-only} {
+    margin-right: 137px;
+  }
+
+  @media #{$desktop-only} {
+    min-width: 247px;
     min-height: 280px;
     margin-right: 77px;
   }
 }
 
 .about-service__item:nth-child(4) {
-  @media #{$not-mobile} {
-    width: 249px;
+  @media #{$tablet-only} {
+    margin-right: 75px;
+  }
+
+  @media #{$desktop-only} {
+    min-width: 249px;
     min-height: 280px;
+  }
+}
+
+.item-number {
+  @media #{$not-mobile} {
+    z-index: 0;
+    position: relative;
+    font-family: var(--accent-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    text-align: center;
+    line-height: 1;
+    color: #f2f2f2;
+    bottom: 139px;
+    left: 56px;
+  }
+
+  @media #{$mobile-only} {
+    display: none;
+  }
+}
+
+.item-title {
+  @media #{$not-mobile} {
+    z-index: 1;
+    position: absolute;
+    display: block;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    top: 111px;
+    left: 0;
   }
 }

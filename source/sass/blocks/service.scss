@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 20px;
+
+  @media #{$tablet-only} {
+    gap: 30px;
+  }
 
   @media #{$desktop-only} {
     flex-direction: row;
@@ -13,20 +18,30 @@
 .service__type-service {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
-  margin-right: 20px;
   background-color: #f2f2f2;
+  position: relative;
 
   @media #{$tablet-only} {
     height: 372px;
-    margin-left: 31px;
-    margin-right: 31px;
   }
 
   @media #{$desktop-only} {
     min-width: 570px;
     height: 374px;
     margin: 0;
+  }
+
+  @media #{$mobile-only} {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      height: 1px;
+      bottom: 56px;
+      background: #d9d9d9;
+    }
   }
 }
 
@@ -38,12 +53,11 @@
   line-height: 1.54;
   text-transform: uppercase;
   color: #000000;
-  margin-left: 91px;
   margin-bottom: 29px;
   position: relative;
 
-
   @media #{$tablet-only} {
+    text-align: left;
     margin-left: 53px;
     margin-top: 77px;
     margin-bottom: 24px;
@@ -59,27 +73,62 @@
   @media #{$desktop-only} {
     font-family: var(--accent-font);
     font-style: normal;
-    font-weight: 400;
     font-size: 36px;
     line-height: 1;
     text-transform: uppercase;
     color: #000000;
-    text-align: center;
+    margin-left: 214px;
+    margin-top: 77px;
+    margin-bottom: 73px;
+
+    &--icon_walking {
+      --icon: url("../../icons/stack.svg#cat-sitting");
+    }
+
+    &--icon_sitting {
+      --icon: url("../../icons/stack.svg#cat-walking");
+    }
 
     &::before {
       content: "";
+      position: absolute;
       display: block;
-      width: 36px;
-      height: 50px;
-      left: 0;
-      background: url("../../icons/stack.svg#cat-sitting") no-repeat center / cover;
-      padding-right: -40px;
+      width: 100px;
+      height: 106px;
+      left: -150px;
+      top: -30px;
+      background: var(--icon) no-repeat center / cover var(--accent-color);
+    }
+  }
+
+  @media #{$mobile-only} {
+    margin-left: 91px;
+
+    &--icon_walking {
+      --icon: url("../../icons/stack.svg#cat-sitting");
+    }
+
+    &--icon_sitting {
+      --icon: url("../../icons/stack.svg#cat-walking");
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 53px;
+      left: -72px;
+      top: 1px;
+      background: var(--icon) no-repeat center / cover var(--accent-color);
     }
   }
 }
 
 .service__description {
+  margin: 0;
   font-family: var(--main-font);
+  position: relative;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -87,21 +136,53 @@
   color: #444444;
   margin-bottom: 38px;
   margin-left: 20px;
-  padding-right: 33px;
+  margin-right: 33px;
+
 
   @media #{$tablet-only} {
-    margin-bottom: 48px;
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     color: #000000;
-    padding-right: 316px;
     margin-left: 52px;
+    margin-right: 316px;
+    margin-bottom: 48px;
+
+    &--icon_walking {
+      --icon: url("../../icons/stack.svg#cat-sitting");
+    }
+
+    &--icon_sitting {
+      --icon: url("../../icons/stack.svg#cat-walking");
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 200px;
+      height: 200px;
+      right: -245px;
+      top: -65px;
+      background: var(--icon) no-repeat center / cover var(--accent-color);
+    }
+  }
+
+
+  @media #{$desktop-only} {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    margin-left: 52px;
+    margin-right: 61px;
+    margin-bottom: 23px;
   }
 }
-
 
 .service__link {
   font-family: var(--accent-font);
@@ -115,8 +196,9 @@
   margin-left: 20px;
   text-decoration: none;
   height: 38px;
+  position: relative;
 
-  @media #{$tablet-only} {
+  @media #{$not-mobile} {
     font-family: var(--accent-font);
     font-style: normal;
     font-weight: 400;
@@ -124,7 +206,25 @@
     line-height: 30px;
     text-transform: uppercase;
     color: #000000;
-    margin-left: 53px;
+    margin-left: 52px;
+    margin-bottom: 57px;
+  }
+
+  @media #{$desktop-only} {
+    margin-bottom: 55px;
+  }
+
+
+  @media #{$mobile-only} {
+    /*&::before {
+      content: "";
+      position: absolute;
+      left: 1px;
+      top: -20px;
+      width: 240px;
+      height: 1px;
+      background: #d9d9d9;
+    }*/
   }
 
   &::after {
