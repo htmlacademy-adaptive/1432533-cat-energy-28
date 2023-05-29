@@ -6,10 +6,10 @@
     "price price";
   row-gap: 20px;
 
+
   @media #{$tablet-only} {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
   }
 }
 
@@ -28,11 +28,11 @@
   &--price {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     grid-area: price;
 
     @media #{$tablet-only} {
       flex-direction: column;
+      margin-left: auto;
     }
 
     @media #{$desktop-only} {
@@ -41,11 +41,111 @@
   }
 }
 
-.result__value {
-  margin: 0;
-  align-items: center;
+.result__name {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  color: var(--main-color);
+
+
+  text-align: center;
+
+  @media #{$mobile-only} {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 auto;
+    margin-top: -11px;
+    width: 77px;
+    height: 24px;
+    background-color: hsl(0 0% 92%);
+
+    &--costs {
+      margin: 0;
+      margin-left: 26px;
+      padding: 0;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &--costs {
+    font-family: var(--accent-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  @media #{$not-mobile} {
+    font-size: 14px;
+
+    &--costs {
+      font-size: 20px;
+      line-height: 1;
+      margin: 0;
+    }
+  }
+
+  @media #{$tablet-only} {
+    &--costs {
+      text-align: end;
+    }
+  }
 }
 
-.result__wrapper {
-  grid-area: result-list;
+.result__value {
+  font-family: var(--accent-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  color: #000000;
+  padding-top: 14px;
+  min-width: 124px;
+  min-height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  margin-left: 0;
+
+  &--costs {
+    font-family: var(--accent-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 0;
+    border: none;
+    text-align: start;
+  }
+
+  @media #{$not-mobile} {
+    font-size: 30px;
+    line-height: 1.23;
+    min-width: 162px;
+
+    &--costs {
+      font-size: 20px;
+      line-height: 1;
+    }
+  }
+
+  @media #{$tablet-only} {
+    margin-left: 0;
+
+    &--costs {
+      text-align: end;
+    }
+  }
+}
+
+.result__item:nth-child(1) {
+  margin-right: 32px;
 }
